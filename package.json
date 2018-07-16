@@ -1,16 +1,39 @@
 {
   "name": "haikunator-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple cli interface to generate Heroku-like random names",
   "main": "index.js",
-  "bin": {
-    "haikunate": "src/index.js"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mplabs/haikunator-cli.git"
   },
-  "keywords": [],
-  "author": "Felix Dürrwald <fduerrwald@salesforce.com>",
+  "homepage": "https://github.com/mplabs/haikunator-cli",
+  "bugs": "https://github.com/mplabs/haikunator-cli/issues",
+  "author": "Felix Dürrwald <mplabs@mplabs.de>",
+  "bin": {
+    "haikunate": "index.js"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "haikunator",
+    "haikunate",
+    "cli",
+    "heroku",
+    "names",
+    "random",
+    "haikunator-cli"
+  ],
   "license": "MIT",
   "dependencies": {
     "haikunator": "2.0.0",
     "yargs": "12.0.1"
+  },
+  "devDependencies": {
+    "standard": "11.0.1"
   }
 }

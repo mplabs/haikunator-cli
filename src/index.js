@@ -15,6 +15,7 @@ const argv = require('yargs')
   .alias('l', 'tokenLength')
   .default('l', 0)
   .describe('l', 'Length of the token to append')
+  .epilog('For more information, visit https://github.com/mplabs/haikunator-cli')
   .help()
   .argv
 
